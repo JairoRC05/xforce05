@@ -29,12 +29,14 @@ layout: compress
   </script>
 
   {% include navbar.html %}
+
+
   <div class="wrapper post">
     <main class="page-content" aria-label="Content">
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
         <header class="header">
-          {% if page.tags and page.tags != empty %}
+          <!-- {% if page.tags and page.tags != empty %}
           <div class="tags">
             {% assign tags = page.tags %}
             <span itemprop="keywords">
@@ -44,10 +46,11 @@ layout: compress
               {% endfor %}
             </span>
           </div>
-          {% endif %}
-          <h1 class="header-title" itemprop="headline">{{ page.title | escape }}</h1>
+          {% endif %} -->
+         
           {% if page.date %}
-          <div class="post-meta">
+          <!-- <div class="post-meta">
+             <h1 class="header-title" itemprop="headline">{{ page.nickname | escape }}</h1>
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
               {{ page.date | date: "%b %d, %Y" }}
             </time>
@@ -60,7 +63,43 @@ layout: compress
             <span hidden itemprop="publisher" itemtype="Person">{{ site.author.name }}</span>
             <span hidden itemprop="image">{{ page.image }}</span>
             <span hidden itemprop="mainEntityOfPage">{{ page.excerpt }}</span>
+          </div> -->
+
+          <div class="player" style="background: {{ page.background }};">
+            <!-- <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span> -->
+            <div class="player__nickname">
+              <h1 style="color: {{ page.color }};">{{ page.nickname | escape }}</h1>
+            </div>
+            <div class="card__holo">
+              <img src="{{post.holo}}" alt="">
+            </div>
+            <div class="card__avatar">
+              <img src="{{ post.avatar}}" alt="">
+            </div>
+            <div class="card__frame">
+              <img src="{{ post.frame}}" alt="">
+            </div>
+            <div class="card__rol">
+              <span>{{ post.rol}}</span>
+            </div>
+            <div class="player__main">
+             <img src="{{ page.maincover}}" alt="">
+            </div>
+           <div class="player__redes">
+            <div class="redes">
+              <i class="fa-brands fa-discord"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div> 
+           </div>
+           <div class="player__rol">
+            <h2>{{ page.rol | escape }}</h2>
           </div>
+          </div>
+
+
           {% endif %}
         </header>
 

@@ -8,8 +8,8 @@
 
 // Post title
 .header {
-  margin-top: 7.8em;
-  margin-bottom: 3em;
+  // margin-top: 7.8em;
+  // margin-bottom: 3em;
 
   .tags {
     margin-left: 3px;
@@ -139,7 +139,7 @@
   h6 {
     color: $black;
     font-weight: $bold-weight;
-    margin-top: $spacing-full;
+    // margin-top: $spacing-full;
     margin-bottom: 0;
 
     &:hover {
@@ -258,4 +258,550 @@
 
 .post-updated-at {
   font-family: "Ubuntu mono", "monospace";
+}
+
+
+.flex-container{
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.card__player{
+  width: 30%;
+  height: 150px;
+  position: relative;
+  background-color: aqua;
+  border-radius: 10px;
+  margin: 5px 5px 15px 5px;
+  overflow: hidden;
+}
+
+
+.card__header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #1D104D;
+  border-radius: 8px 8px 0 0;
+  padding: 0 0 0% 5%;
+  
+}
+
+
+.card__text > a {
+  position: absolute;
+  top: 10px;
+  left: 3%;
+}
+
+
+
+.card__avatar > img {
+  position: absolute;
+  bottom: 25%;
+  right: 7%;
+  width: 20%;
+}
+
+.card__frame > img {
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  width: 30%
+}
+
+.card__holo > img {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  width: 18%;
+}
+
+.card__main > span {
+  position: absolute;
+  top: 35%;;
+  left: 3%;
+  width: 20%;
+  color: #1D104D;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+
+.card__rol > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  border-radius: 0 10px 0 10px;
+  background: #5a3bc998;
+  color: #fff;
+  width: 40%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+.player{
+  margin-top: 20px;
+  background: red;
+  // border: 5px solid rgb(187, 2, 2);
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  border-radius: 20px;
+  
+}
+
+.player::before{
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  border-radius: 20px;
+  background-size: 40%;
+  background-repeat: repeat;
+  background-image: url(/assets/img/square-pattern-30.svg);
+  content: "";
+}
+
+
+.player__nickname > h1 {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  color: white;
+  width: 60%;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: right;
+  
+}
+
+.player__main > img {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  width: 55%;
+}
+
+
+.player__redes > .redes {
+  
+  position: absolute;
+  bottom: 15px;
+  right: 3%;
+  color: white;
+  font-size: 45px;
+ 
+}
+
+.player__rol > h2 {
+  
+  position: absolute;
+  top: 20%  ;
+//   background: rgb(2,0,36);
+// background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.3477766106442577) 89%, rgba(0,0,0,0) 100%);
+  right: 3% ;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  
+}
+
+.card__license{
+  width: 25%;
+  height: 300px;
+  position: relative;
+  background-color: aqua;
+  border-radius: 5px 70px 25px 25px;
+  
+  overflow: hidden;
+  
+}
+
+
+.card__license::before{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px 70px 25px 25px;
+  background-size: 50%;
+  background-repeat: repeat;
+  background-image: url(/assets/img/square-pattern-30.svg);
+  
+  
+  content: "";
+}
+
+
+
+.card__footer {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 0 0 20px 20px;
+  padding: 0 0 0% 5%;
+  border-top: 3px #7e7e7e solid;
+}
+
+
+.card__pick > img {
+  position: absolute;
+  bottom: 2%;
+  max-width: none;
+  width: 350px;
+
+}
+
+.card__name > a {
+  position: absolute;
+  bottom: 1%;
+  left: 25%;
+  color: black;
+  max-width: none;
+  width: 350px;
+  font-size: 18px;
+}
+
+
+.player__rol > .pills {
+  position: absolute;
+  top: 22%;
+  right: 3%;
+  color: white;
+  width: 60%;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+  
+}
+
+.player__gemas > .gemas {
+  position: absolute;
+  bottom: 30%;
+  right: 3%;
+  color: white;
+  width: 60%;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+  
+}
+
+
+.gemas > span{
+  background-color: #00000077;
+  margin-right: 5px;
+  padding: 5px 35px;
+  font-style: normal;
+  border-radius: 0 20px 20px 0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.gemas > img{
+  margin-right: 5px;
+  position: absolute;
+  right: 20%;
+  bottom: -20%;
+  font-style: normal;
+  width: 15%;
+}
+
+.player__monedas > .monedas {
+  position: absolute;
+  bottom: 30%;
+  right: 25%;
+  color: white;
+  width: 60%;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+  
+}
+
+
+.monedas > span{
+  background-color: #00000077;
+  margin-right: 5px;
+  padding: 5px 40px;
+  font-style: normal;
+  border-radius: 0 20px 20px 0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.monedas > img{
+  margin-right: 5px;
+  position: absolute;
+  right: 20%;
+  bottom: -20%;
+  font-style: normal;
+  width: 15%;
+}
+
+
+.pills > span{
+
+  background-color: #00000077;
+  margin-right: 5px;
+  padding: 5px;
+  font-style: normal;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.flex__skill{
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.card {
+  width: 45%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+  padding: 12px;
+  margin-bottom: 50px;
+  
+}
+
+.card__mov {
+  width: 95%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+// .card:hover {
+//   cursor: pointer;
+//   transform: scale(1.05);
+// }
+
+.img >img {
+  width: 83px;
+  height: 83px;
+  border-radius: 100%;
+  background: linear-gradient(#ffd000, #b2ca5b);
+}
+
+// .card:hover > .img {
+//   transition: 0.5s ease-in-out;
+//   background: linear-gradient(#9198e5, #712020);
+// }
+
+.textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 12px;
+  color: #000000;
+}
+
+.h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase
+}
+
+.p {
+  color: #000;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+
+
+.drop { filter: drop-shadow(0 22px 50px rgba(0, 0, 0, 0.7)); }
+
+.pill{
+  background: black;
+  color: white;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+
+
+.con{
+  position: absolute;
+  bottom: 10px;
+  right: 3%;
+}
+
+.chart{
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.chart canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+}
+
+.percent{
+  display: inline-block;
+  line-height: 66px;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.label{
+  display: block;
+  margin: 5px 0 5px 0 ;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+
+.title, .more {
+  padding: 10px 15px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #fff;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.user__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.user__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+.text{
+  line-height: 1em;
+}
+
+.name {
+  font-weight: 800;
+}
+
+.username {
+  font-size: .9em;
+  color: #64696e;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  background: rgb(22,19,70);
+  background: linear-gradient(295deg, rgba(22,19,70,1) 41%, rgba(89,177,237,1) 100%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.follow {
+  border: none;
+  border-radius: 25px;
+  background-color: #0f1113;
+  color: white;
+  padding: 8px 15px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.more {
+  display: block;
+  text-decoration: none;
+  color: rgb(29, 155, 240);
+  font-weight: 800;
+}
+
+.user:hover {
+  background-color: #b3b6b6;
+}
+
+.more:hover {
+  background-color: #b3b6b6;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.follow:hover {
+  background-color: #2c3136;
+}
+
+
+.card_res {
+  width: auto;
+  height: auto;
+  background: #E8EAEA;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.content{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-content: center;
+
 }

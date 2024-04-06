@@ -1,0 +1,155 @@
+{
+    "frontMatter.framework.id": "jekyll",
+    "frontMatter.content.publicFolder": "assets",
+    "frontMatter.preview.host": "http://localhost:4000",
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "posts",
+            "path": "[[workspace]]/_posts"
+        }
+    ],
+    "frontMatter.git.enabled": true,
+    "frontMatter.taxonomy.contentTypes": [
+        {
+            "name": "default",
+            "pageBundle": false,
+            "fields": [
+                {
+                    "title": "layout",
+                    "name": "layout",
+                    "type": "string"
+                },
+                {
+                    "title": "permalink",
+                    "name": "permalink",
+                    "type": "string"
+                },
+                {
+                    "title": "categories",
+                    "name": "categories",
+                    "type": "categories"
+                },
+                {
+                    "title": "date",
+                    "name": "date",
+                    "type": "datetime"
+                },
+                {
+                    "title": "title",
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "title": "tag",
+                    "name": "tag",
+                    "type": "tags"
+                },
+                {
+                    "title": "color",
+                    "name": "color",
+                    "type": "string"
+                },
+                {
+                    "title": "puntosLJ202404",
+                    "name": "puntosLJ202404",
+                    "type": "number"
+                },
+                {
+                    "title": "grupo",
+                    "name": "grupo",
+                    "type": "string"
+                },
+                {
+                    "title": "background",
+                    "name": "background",
+                    "type": "string"
+                },
+                {
+                    "title": "cover",
+                    "name": "cover",
+                    "type": "string"
+                },
+                {
+                    "title": "team",
+                    "name": "team",
+                    "type": "string"
+                },
+                {
+                    "title": "abr",
+                    "name": "abr",
+                    "type": "string"
+                },
+                {
+                    "title": "t1",
+                    "name": "t1",
+                    "type": "string"
+                },
+                {
+                    "title": "r1",
+                    "name": "r1",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t2",
+                    "name": "t2",
+                    "type": "string"
+                },
+                {
+                    "title": "r2",
+                    "name": "r2",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t3",
+                    "name": "t3",
+                    "type": "string"
+                },
+                {
+                    "title": "r3",
+                    "name": "r3",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t4",
+                    "name": "t4",
+                    "type": "string"
+                },
+                {
+                    "title": "r4",
+                    "name": "r4",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t5",
+                    "name": "t5",
+                    "type": "string"
+                },
+                {
+                    "title": "r5",
+                    "name": "r5",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t6",
+                    "name": "t6",
+                    "type": "string"
+                },
+                {
+                    "title": "r6",
+                    "name": "r6",
+                    "type": "datetime"
+                },
+                {
+                    "title": "t7",
+                    "name": "t7",
+                    "type": "string"
+                },
+                {
+                    "title": "r7",
+                    "name": "r7",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

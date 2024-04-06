@@ -74,7 +74,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-top: $spacing-full - 20;
+  // margin-top: $spacing-full - 20;
   margin-bottom: $spacing-full - 20;
 }
 
@@ -275,9 +275,9 @@ blockquote {
 
 // Wrapper
 .wrapper {
-  max-width: -webkit-calc(#{$narrow-size} - (#{$spacing-full} * 2));
-  max-width: calc(#{$narrow-size} - (#{$spacing-full} * 2));
-  position: relative;
+  max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
+  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
+  position: relative; 
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-full;
